@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./portfolio.png" />
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="navbar">
+        <div class="logo">S<span style="color: #d47f5c">W</span>W</div>
+        <div class="mobile-menu-btn" id="c-btn">
+          <i class="fa-solid fa-bars" id="iconBtn"></i>
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="my-desc">
+        <h1>H</h1>
+        <h2>I'm S</h2>
+      </div>
+    </header>
+    <section class="hero-details" id="about">
+      <h1 class="section-title">About me</h1>
+      <div class="flex-x">
+        <div class="hero-image">
+          <img src="./hero-image.jpg" alt="my picture" />
+          <div class="smedia">
+            <a
+              title="instagram"
+              href="https://www.instagram.com/watashiwa.sandeepu.des/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://github.com/kaneki850869" target="_blank">
+              <i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://twitter.com/sandeep850869" target="_blank">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="https://open.spotify.com/playlist/5yuBNo9CPJ89mNd2ZN2Nr7?si=afff24d788264c5b"
+              target="_blank"
+            >
+              <i class="fa-brands fa-spotify"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-intro">
+          <p>
+            I am a positive, enthusiastic and competent web developer who is
+            trying to create beautiful websites and trying to focus on building
+            best pages available on web. I love to build personal websites.I
+            love HTML,CSS,JS. I've created small projects which includes the
+            core of JavaScript. And will become a Senior Web Developer one day.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="openTab('certifications')">
+              Certifications
+            </p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br />Building Web/App Interfaces</li>
+              <li><span>Web Development</span><br />Web App Development</li>
+              <li>
+                <span>App Development</span><br />Building Android/iOS Apps
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="certifications">
+            <ul>
+              <li>
+                <span>JavaScript</span><br />Certification in The Complete
+                JavaScript Course 2023: Zero to Expert by Jonas Schmedtmann from
+                Udemy
+              </li>
+              <li>
+                <span>Web Development BootCamp 2023</span><br />Certification in
+                The Complete 2023 Web Development Bootcamp by Dr. Angela Yu from
+                Udemy.
+              </li>
+              <li>
+                <span>Java</span><br />Certification in Java Basics from
+                Hackerrank.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2015-2016</span><br />SSC - Sada Shiva Concept School,As
+                rao nagar,Hyderabad
+              </li>
+              <li>
+                <span>2016-2018</span><br />Intermediate Education - Sri Gayatri
+                Junior College,ECIL,Hyderabad
+              </li>
+              <li>
+                <span>2018-2022</span><br />Engineering(CSE) - Samskruti College
+                of Engieering and Technology,Ghatkesar,Hyderabad
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 style="text-align:end;"> Next Section In Progress......!</h1>
+
+    <div class="scroll-to-top">
+      <button title="move-to-top" id="scroll" onclick="toTheTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

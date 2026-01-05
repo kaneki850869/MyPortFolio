@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.logo {
+  color: #fff;
+  font-size: 3rem;
+  margin-left: 0.75rem;
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.navbar {
+  border-bottom: 1px solid #f3aa60;
+}
+.navbar button {
+  position: absolute;
+  right: 2rem;
+  padding: 8px 12px;
+  background-color: transparent;
+  font-size: 1rem;
+  border: 2px solid #f3aa60;
+  cursor: pointer;
+}
+.navbar button a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+.nav-links ul {
+  display: flex;
+  gap: 50px;
+  margin: 0.75rem 1rem;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.nav-links li a:hover {
+  color: #f3aa60;
+  transition: 0.5s ease;
+}
+
+.mobile-menu-btn i {
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./hero-section-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  border: none;
+  margin: 0%;
+  padding: 0%;
+}
+/* My main description */
+.my-desc {
+  width: 20vh;
+  position: relative;
+  top: 20%;
+  left: 25%;
+  line-height: 1.2;
+  border-radius: 10px;
+}
+.my-desc h1::after {
+  content: "i,";
+  font-size: 4rem;
+}
+.my-desc h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  transition: width 0.25s ease-in-out;
+}
+.my-desc h1:hover::before {
+  width: 100%;
+}
+.my-desc h2::after {
+  content: "andeep";
+  font-size: 3rem;
+}
+.my-desc h1 {
+  width: 12%;
+
+  position: relative;
+  font-size: 5rem;
+  color: #f3aa60;
+}
+.my-desc h2 {
+  position: relative;
+  font-size: 4rem;
+  color: #f3aa60;
+  width: 50%;
+}
+.my-desc h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #f3aa60;
+  height: 2px;
+  width: 0;
+  transition: width 0.25s ease-in-out;
+}
+.my-desc h2:hover:before {
+  width: 100%;
+}
+
+/* Button after or before */
+
+.navbar button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #f3aa60;
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+}
+.navbar button:hover::before {
+  width: 100%;
+}
+
+section {
+  background-color: #f3aa60;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+section .flex-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px;
+}
+section .section-title {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 4rem;
+}
+.hero-image {
+  padding: 10px 20px;
+  background-color: #2c3333;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.hero-image img {
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+section hero .hero-intro {
+  color: #fff;
+}
+.hero-intro {
+  padding: 30px 10px;
+}
+.scroll-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+}
+.hero-intro {
+  height: 70vh;
+}
+.hero-intro p {
+  font-size: 1.2rem;
+  letter-spacing: 1.3;
+}
+.scroll-to-top button {
+  padding: 20px;
+  border-radius: 20%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(123, 123, 123, 0.3);
+}
+.scroll-to-top i {
+  font-size: 1.2rem;
+}
+
+.hero-details img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.hero-intro {
+  width: 50%;
+}
+
+/* social media design */
+.smedia {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+.smedia a {
+  padding: 12px;
+}
+.smedia a i {
+  color: #fff;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.smedia a .fa-spotify:hover {
+  transform: scale(1.5);
+  color: #1db954;
+}
+.smedia a .fa-twitter:hover {
+  color: #209cf4;
+  transform: scale(1.5);
+}
+.smedia a .fa-instagram:hover {
+  color: #f424b0;
+  transform: scale(1.5);
+}
+.smedia a .fa-github:hover {
+  transform: scale(1.5);
+}
+li {
+  list-style: none;
+}
+.hero-details h1 {
+  color: #393053;
+}
+.tab-titles {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 50px;
+  position: relative;
+}
+.tab-titles .tab-links {
+  font-size: 1.5rem;
+  color: #393053;
+}
+
+.tab-links {
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #2c3333;
+  transition: 0.5s ease;
+}
+.tab-links.active-link::before {
+  width: 100%;
+}
+.tab-contents {
+  color: #2c3333;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.tab-contents span {
+  color: #393053;
+  font-weight: bold;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  section.hero-details {
+    height: auto;
+  }
+  section .flex-x {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    position: relative;
+  }
+  .hero-intro {
+    width: 65vh;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: 0.5s ease-in-out;
+    width: 88%;
+  }
+  .mobile-menu-btn i {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+
+    text-align: center;
+  }
+  .nav-links {
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .nav-links li {
+    padding: 0 0.1rem;
+  }
+  .navbar button {
+    display: none;
+  }
+
+  .nav-links.active {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    z-index: 999;
+  }
+  .my-desc {
+    position: absolute;
+    left: 3%;
+    top: 10%;
+    width: 35%;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* about */
+
+@media (width <= 390px) {
+  body {
+    overflow-y: hidden;
+  }
+}

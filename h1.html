@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>underline animation on hover</title>
+    <style>
+      *,
+      ::after,
+      ::before {
+      }
+      .underline-animation {
+        display: inline-block;
+        position: relative;
+        margin-top: 20%;
+        font-family: "Poppins", sans-serif;
+        left: 25%;
+      }
+
+      .underline-animation::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="underline-animation">Sandeep</h1>
+  </body>
+</html>
